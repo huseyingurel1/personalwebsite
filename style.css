@@ -1,0 +1,97 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg);
+    background-size: cover;
+
+}.box{
+    width: 350px;
+    border-radius: 5%;
+    padding: 30px;   /* box un içindeki herşeyi kenardan 30px uzaklaştır */
+    text-align: center; /* box un içindeki herşeyi ortala */
+    margin: auto; /* boxu sayfanın ortasına koy */
+    /* margin-top: 1%; üstten  30% mesafe ver */
+    background-color: #6b5858d0; /* Renkkodu ile saydamlık ekledik */
+    color:#fff; /* Yazı rengini belirledik */
+    font-family: sans-serif;
+
+}
+.box img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;  /* Hover animasyonunun gecikme süresi  */
+}
+.box img:hover{
+    transform: scale(1.05);     /* scale>1 ölçeği büyütür ,scale<1 ölçeği küçültür */
+
+}
+.box h1{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.box h5{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.box p{
+    text-align: justify;    /* metini iki yana yaslar */
+}
+.box ul{
+    margin: 0;
+    padding: 0;
+}
+.box li {
+    margin: auto;
+    display: inline-block; /*  Listedeki maddeleri yanyana getirir */
+    margin: 6px 10px;    /* dikey 6 yatay 10px mesafe */
+    list-style: none;   /* Madde işaretlerini kaldırır  */
+}
+.box li a{
+    color:white;
+    font-size: 40px;
+    cursor: pointer;
+    transition:all ease-in-out 0s;
+}
+.box li a :hover{
+    color: #b9b9b9;
+    transform: scale(0.9);
+}
+.navbar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 32px , 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    cursor: pointer; 
+    border-radius: 50%;    /* köşeleri yuvarla */
+    margin: 20px 0px;
+    transition: 0.5s;  /* Hover animasyonunun gecikme süresi  */
+}
+.logo:hover{
+    transform: scale(1.2);    
+}
+.navbar ul li{    /* navbar sınıfından ul içinde li ye git */
+    
+    list-style-type: none;  /*madde noktasını kaldırdı */
+    display: inline-block;    /* yan yana sırala */
+    margin: 0  50px;  /* dikey 0, yatay olarak 25px mesafelendir */
+    font-size: 23px;
+    transition: 0.5s;  /* Hover animasyonunun gecikme süresi  */
+
+}
+.navbar ul li:hover{
+    transform: scale(0.9);
+
+}
+.navbar ul li a{     /*navbar ul li içindeki linklere ulaş */
+    text-decoration: none;     /* Altçizgiyi kaldır */
+    color: #fff ; /* textin rengini beyaz yaptık */    
+}
